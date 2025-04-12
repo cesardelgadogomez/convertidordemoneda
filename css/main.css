@@ -73,6 +73,10 @@ body {
 }
 
 @media screen and (max-width: 440px) {
+  body {
+    min-height: 100dvh;
+  }
+
   .converter-container {
     width: 85%;
     margin: 0 auto;
