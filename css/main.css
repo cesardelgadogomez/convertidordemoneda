@@ -9,6 +9,7 @@
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -24,9 +25,38 @@ body {
   text-align: center;
 }
 
-.logo {
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #323233;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background-color: #757575;
+}
+
+.theme-toogle:active {
+  transform: scale(0.95);
+}
+
+.bi-sun-fill {
+  display: none;
+}
+
+.logo-black {
   width: 120px;
   margin-block: 20px;
+}
+
+.logo-white {
+  display: none;
 }
 
 
@@ -105,4 +135,14 @@ body {
     font-size: 1.2rem;
   }
   
+}
+
+/****** DARK MODE ******/
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: #1b0737;
+  color: white;
 }
