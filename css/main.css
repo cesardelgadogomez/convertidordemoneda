@@ -49,11 +49,11 @@ body {
 }
 
 .theme-toggle .light-icon {
-  display: inline;
+  display: none;
 }
 
 .theme-toggle .dark-icon {
-  display: none;
+  display: inline;
 }
 
 .logo-black {
@@ -169,11 +169,11 @@ body.dark-mode .theme-toggle {
 }
 
 body.dark-mode .theme-toggle .light-icon {
-  display: none;
+  display: inline;
 }
 
 body.dark-mode .theme-toggle .dark-icon {
-  display: inline;
+  display: none;
 }
 
 body.dark-mode .logo-black {
